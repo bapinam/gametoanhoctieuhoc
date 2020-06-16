@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBaiHoc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinhnentim">
+    tools:context=".BaiHocActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBaiHoc"
+        android:layout_width="594dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackHomeLop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHuongDan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBackHomeLop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/huongdan" />
+
+    <ImageView
+        android:id="@+id/imageViewSoVan"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonHuongDan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sovanchoi" />
+
+    <TextView
+        android:id="@+id/txtSoVanChoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="0/0"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSoVan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTien"
+        android:layout_width="245dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/imageTenUser"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hopmoney"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVangBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toEndOf="@+id/imageTenUser"
+        android:textColor="#978F8F"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewTongSao"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/txtSoVanChoi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaovang" />
+
+    <TextView
+        android:id="@+id/textViewTongSao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:text="0/0"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTongSao"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

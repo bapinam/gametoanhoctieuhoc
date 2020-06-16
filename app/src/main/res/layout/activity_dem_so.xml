@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainDemSo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7b68ee"
+    tools:context=".DemSoActivity">
+
+    <View
+        android:id="@+id/viewNen"
+        android:layout_width="727dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="84dp"
+        android:background="#8470FF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHai"
+        android:layout_width="721dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDemSo1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="48dp"
+        android:background="#FF6A6A"
+        android:contentDescription="@string/app_name"
+        android:text="10"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewNen" />
+
+    <Button
+        android:id="@+id/buttonDemSo2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:background="#CD69C9"
+        android:contentDescription="@string/app_name"
+        android:text="20"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonDemSo1"
+        app:layout_constraintTop_toBottomOf="@+id/viewNen" />
+
+    <Button
+        android:id="@+id/buttonDemSo3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:background="#4EEE94"
+        android:contentDescription="@string/app_name"
+        android:text="13"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonDemSo2"
+        app:layout_constraintTop_toBottomOf="@+id/viewNen" />
+
+    <Button
+        android:id="@+id/buttonPhepToanDemSo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="268dp"
+        android:background="#008080"
+        android:text="x"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="668dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:text="00:00"
+        android:textColor="#0000ff"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMot"
+        android:layout_width="721dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackDS"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/imageViewNgoiSao1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBackDS"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaovang" />
+
+    <ImageView
+        android:id="@+id/imageViewNgoiSao2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNgoiSao1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaovang" />
+
+    <ImageView
+        android:id="@+id/imageViewNgoiSao3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNgoiSao2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaotrangden" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

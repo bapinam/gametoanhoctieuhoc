@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.toantieuhoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_math"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_math"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,UnusedAttribute">
+        <activity android:name=".TroChuyenActivity"></activity>
+        <activity android:name=".XepHangActivity" />
+        <activity android:name=".SoSanhActivity" />
+        <activity android:name=".TheLoaiBaiHocActivity" />
+        <activity
+            android:name=".SapXepActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="ExtraText,LockedOrientationActivity" />
+        <activity
+            android:name=".DemSoActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="ExtraText,LockedOrientationActivity" />
+        <activity
+            android:name=".BaiHocActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LopHocActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

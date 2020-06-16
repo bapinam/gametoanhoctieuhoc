@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XepHangActivity"
+    android:background="@drawable/hinhnen">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewXH"
+        android:layout_width="802dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonThoatXH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back" />
+
+    <Button
+        android:id="@+id/buttonLopMot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:background="#ff7f50"
+        android:text="LỚP 1"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonThoatXH"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLopHai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Lớp 2"
+        android:background="#FFC107"
+        app:layout_constraintStart_toEndOf="@+id/buttonLopMot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLopBa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Lớp 3"
+        android:background="#FFC107"
+        app:layout_constraintStart_toEndOf="@+id/buttonLopHai"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLopBon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Lớp 4"
+        android:background="#FFC107"
+        app:layout_constraintStart_toEndOf="@+id/buttonLopBa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLopNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Lớp 5"
+        android:background="#FFC107"
+        app:layout_constraintStart_toEndOf="@+id/buttonLopBon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDemSo"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="3dp"
+        android:background="#ff7f50"
+        android:text="Đếm Số"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonThoatXH"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLopMot" />
+
+    <Button
+        android:id="@+id/buttonSoSanh"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFC107"
+        android:text="So Sánh"
+        app:layout_constraintStart_toEndOf="@+id/buttonDemSo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLopBa" />
+
+    <TextView
+        android:id="@+id/imageViewTOP_you"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/top"
+        android:gravity="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUserTOP_you"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="25dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTOP_you" />
+
+    <TextView
+        android:id="@+id/textViewDiemTOP_you"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="25dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtUserTOP_you" />
+
+    <TextView
+        android:id="@+id/textViewThoiGianTOP_you"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="25dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDiemTOP_you" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="195dp"
+        android:background="#dc143c"
+        android:text="HẠNG"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewTOP_you"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="200dp"
+        android:background="#dc143c"
+        android:gravity="center"
+        android:text="TÊN"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtUserTOP_you"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="200dp"
+        android:background="#dc143c"
+        android:text="ĐIỂM"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDiemTOP_you"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="200dp"
+        android:background="#dc143c"
+        android:text="THỜI GIAN"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewThoiGianTOP_you"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

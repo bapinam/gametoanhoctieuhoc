@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoSanhActivity"
+    android:background="@drawable/bang">
+
+    <Button
+        android:id="@+id/buttonNoiDung1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="130dp"
+        android:background="#8BC34A"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoiDung2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNoiDung2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:background="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoiDung3"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoiDung1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNoiDung3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="100dp"
+        android:background="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoiDung2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNoiDung4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:background="#8BC34A"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoiDung5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNoiDung1" />
+
+    <Button
+        android:id="@+id/buttonNoiDung5"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoiDung6"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoiDung4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNoiDung2" />
+
+    <Button
+        android:id="@+id/buttonNoiDung6"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:background="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoiDung5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNoiDung3" />
+
+    <TextView
+        android:id="@+id/textViewTimeSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="40dp"
+        android:text="00:00"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNgoiSaoSS3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackSSDS"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/imageViewNgoiSaoSS1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBackSSDS"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaovang" />
+
+    <ImageView
+        android:id="@+id/imageViewNgoiSaoSS2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNgoiSaoSS1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaovang" />
+
+    <ImageView
+        android:id="@+id/imageViewNgoiSaoSS3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNgoiSaoSS2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ngoisaovang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

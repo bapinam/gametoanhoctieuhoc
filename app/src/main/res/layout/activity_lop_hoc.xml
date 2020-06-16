@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bang1"
+    tools:context=".LopHocActivity">
+
+
+    <ImageView
+        android:id="@+id/imageLopNam"
+        android:layout_width="205dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="436dp"
+        android:layout_marginTop="170dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imageLopBon"
+        android:layout_width="205dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="170dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imageLopHai"
+        android:layout_width="205dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imageLopBa"
+        android:layout_width="205dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="511dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imageLopMot"
+        android:layout_width="205dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="49dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackHome"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/icon_back" />
+</RelativeLayout>
